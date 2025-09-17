@@ -3,14 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Principal - Mochileros Viajeros</title>
+    <title>Página Principal - Mochileros Sin Fronteras</title>
     <link rel="stylesheet" href="style/styles.css" /></head
   >http://127.0.0.1:5500/index.html
   <body>
-    <h1>Bienvenido a Mochileros Viajeros</h1>
-    <p>Descubre y comparte viajes con otros mochileros.</p>
-    <a href="registro.html">Regístrate</a>
-    <a href="formulario.html">Inicia Sesión</a>
-    <a href="compra.html">Compra</a>
+  <!-- Barra superior -->
+    <header style="display: flex; justify-content: space-between; align-items: center">
+      <h2>Mochileros Sin Fronteras</h2>
+      <!-- Barra de Navegación -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html">Experiencias</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="index.html">Foro</a></li>
+          <li><a href="compra.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Logo -->
+      <img
+        src="img/logo.png"
+        alt="Logo Mochileros Sin Fronteras"
+        style="width: 100px; height: auto"
+      />
+      <!-- Selector de Idiomas -->
+      <select name="Idiomas" name="idioma">
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <option value="de">Alemán</option>
+      </select>
+
+    </header>
+    <main  style="display: flex; justify-content: space-between; align-items: center;">
+      <!-- Sección izquierda -->
+      <section>
+        <h2>Comparte y descubre viajes mochileros de larga distancia</h2>
+        <!-- Contenido destacado -->
+        <section style="display: grid;">
+          <h3>Pack Sudeste Asiático</h3>
+          <p>€600</p>
+          <p>Vietnam & Camboya: buses, hostales y quía de visados</p>
+          <button> <a href="compra.html">Comprar</a></button>
+        </section>
+        <!-- Carrusel de experiencias -->
+         <section>
+            <h3>Experiencias de la comunidad mochilera</h3>
+            <div id="experiencia1">
+              <h4>Hotel en Katmandú</h4>
+              <img src="" alt="Experiencia en Katmandú">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+            <div id="experiencia2">
+              <h4>Sudamérica en bus</h4>
+              <img src="" alt="Experiencia en Sudamérica">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+            <div id="experiencia3"> 
+              <h4>Visado para India</h4>
+              <img src="" alt="Experiencia en India">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+            <div id="experiencia4">
+              <h4>Vietnam: ruta en moto</h4>
+              <img src="" alt="Experiencia en Vietnam">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+            <div id="experiencia5">
+              <h4>Trekking en Perú</h4>
+              <img src="" alt="Experiencia en Perú">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+            <div id="experiencia6">
+              <h4>Safari en Tanzania</h4>
+              <img src="" alt="Experiencia en Tanzania">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+          </section>
+      </section>
+      <!-- Barra lateral -->
+      <aside>
+        <!-- Formulario de registro / inicio de sesión -->
+        <form action="">
+          <input type="text" placeholder="Usuario">
+          <input type="text" placeholder="Contraseña">
+          <input type="checkbox" id="recordar">
+          <label for="recordar">Recordar credenciales</label>
+          <button type="submit">Iniciar sesión</button>
+          <button type="submit">Registrarse</button>
+        </form>
+        <hr>
+        <!-- Destinos destacados -->
+        <h4>Top destions mochileros</h4>
+        <ul>
+          <li>Tailandia</li>
+          <li>Bolivia</li>
+          <li>Nepal</li>
+        </ul>
+        <!-- Consejos -->
+         <h4>Consejos rápidos</h4>
+         <ul>
+            <li>Lleva seguro médico</li>
+            <li>Infórmate sobre visados</li>
+            <li>Viaja ligero</li>
+         </ul>
+        <!-- Próximos encuentros -->
+         <h4>Próximos encuentros</h4>
+         <ul>
+          <li>Madrid · 12/10</li>
+          <li>Barcelona · 25/10</li>
+          <li>Valencia · 08/11</li>
+         </ul>
+      </aside>
+    </main>
+    <footer>
+      <p>@ 2025 Mochileros sin fronteras</p>
+      <a href="contacto.html">Sobre nosotros.</a>
+      <a href="index.html">Política de privacidad.</a>
+      <a href="contacto.html">Ayuda</a>
+      <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+      <a href="https://tiktok.com"><img src="img/tiktok.png" alt="Tiktok"></a>
+      <a href="https://youtube.com"><img src="img/youtube.png" alt="Youtube"></a>
+    </footer>
+    </body>
   </body>
 </html>
