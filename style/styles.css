@@ -1,0 +1,10 @@
+nav ul {
+  display: flex;
+}
+
+#left-section {
+  flex: 2;
+}
+aside {
+  flex: 1;
+}
