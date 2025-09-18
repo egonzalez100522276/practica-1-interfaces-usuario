@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Principal - Mochileros Sin Fronteras</title>
-    <link rel="stylesheet" href="style/styles.css" /></head
-  >http://127.0.0.1:5500/index.html
+    <link rel="stylesheet" href="style/styles.css" />
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+    
   <body>
   <!-- Barra superior -->
-    <header style="display: flex; justify-content: space-between; align-items: center">
+    <header>
       <h2>Mochileros Sin Fronteras</h2>
       <!-- Barra de Navegación -->
       <nav>
@@ -21,30 +24,37 @@
         </ul>
       </nav>
       <!-- Logo -->
-      <img
-        src="img/logo.png"
-        alt="Logo Mochileros Sin Fronteras"
-        style="width: 100px; height: auto"
-      />
-      <!-- Selector de Idiomas -->
-      <select name="Idiomas" name="idioma">
-        <option value="es">Español</option>
-        <option value="en">Inglés</option>
-        <option value="fr">Francés</option>
-        <option value="de">Alemán</option>
-      </select>
+      <div class="nav-container">
+        <img
+          src="img/logo.png"
+          alt="Logo Mochileros Sin Fronteras"
+          class="logo"
+        />
+        <!-- Selector de Idiomas -->
+        <select name="idiom" class="idiom-select">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+        </select>
+    </div>
 
     </header>
-    <main  style="display: flex;">
+    <main>
       <!-- Sección izquierda -->
       <section id="left-section">
+        <section class="highlighted-content">
         <h2>Comparte y descubre viajes mochileros de larga distancia</h2>
         <!-- Contenido destacado -->
-        <section style="display: grid;">
-          <h3>Pack Sudeste Asiático</h3>
-          <p>€600</p>
-          <p>Vietnam & Camboya: buses, hostales y quía de visados</p>
-          <button> <a href="compra.html">Comprar</a></button>
+          <div class="highlighted-card">
+
+            <div id="pack-asia-label">
+              <h3>Pack Sudeste Asiático</h3>
+              <p>€600</p>
+            </div>
+            <p>Vietnam & Camboya: buses, hostales y quía de visados</p>
+            <button class="buy-button"> <a href="compra.html">Comprar</a></button>
+          </div>
         </section>
         <!-- Carrusel de experiencias -->
          <section>
@@ -52,37 +62,38 @@
             <div id="experiencia1" class="experience-card">
               <h4>Hotel en Katmandú</h4>
               <img src="" alt="Experiencia en Katmandú">
-              <p>🤍</p>
+                <i class="fa fa-heart-o"></i>
+
               <button> <a href="index.html">Ver más</a></button>
             </div>
             <div id="experiencia2" class="experience-card">
               <h4>Sudamérica en bus</h4>
               <img src="" alt="Experiencia en Sudamérica">
-              <p>🤍</p>
+              <i class="fa fa-heart-o"></i>
               <button> <a href="index.html">Ver más</a></button>
             </div>
             <div id="experiencia3" class="experience-card">
               <h4>Visado para India</h4>
               <img src="" alt="Experiencia en India">
-              <p>🤍</p>
+              <i class="fa fa-heart-o"></i>
               <button> <a href="index.html">Ver más</a></button>
             </div>
             <div id="experiencia4" class="experience-card">
               <h4>Vietnam: ruta en moto</h4>
               <img src="" alt="Experiencia en Vietnam">
-              <p>🤍</p>
+              <i class="fa fa-heart-o"></i>
               <button> <a href="index.html">Ver más</a></button>
             </div>
             <div id="experiencia5" class="experience-card">
               <h4>Trekking en Perú</h4>
               <img src="" alt="Experiencia en Perú">
-              <p>🤍</p>
+              <i class="fa fa-heart-o"></i>
               <button> <a href="index.html">Ver más</a></button>
             </div>
             <div id="experiencia6" class="experience-card">
               <h4>Safari en Tanzania</h4>
               <img src="" alt="Experiencia en Tanzania">
-              <p>🤍</p>
+              <i class="fa fa-heart-o"></i>
               <button> <a href="index.html">Ver más</a></button>
             </div>
           </section>
@@ -90,7 +101,7 @@
       <!-- Barra lateral -->
       <aside>
         <!-- Formulario de registro / inicio de sesión -->
-        <form action="">
+        <form action="" class="login-form">
           <input type="text" placeholder="Usuario">
           <input type="text" placeholder="Contraseña">
           <input type="checkbox" id="recordar">
@@ -127,9 +138,10 @@
       <a href="contacto.html">Sobre nosotros.</a>
       <a href="index.html">Política de privacidad.</a>
       <a href="contacto.html">Ayuda</a>
-      <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
-      <a href="https://tiktok.com"><img src="img/tiktok.png" alt="Tiktok"></a>
-      <a href="https://youtube.com"><img src="img/youtube.png" alt="Youtube"></a>
+
+      <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+      <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://youtube.com"><i class="fa fa-youtube-play"></i></a>
     </footer>
     </body>
   </body>
