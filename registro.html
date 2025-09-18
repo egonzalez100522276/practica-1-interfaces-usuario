@@ -5,8 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro - Mochileros Sin Fronteras</title>
     <link rel="stylesheet" href="style/styles.css" />
+    <!--CSS temporal antes de pasarlo al archivo style.css-->
+    <style>
+      main {
+        padding: 1rem;
+        border: 1px solid #000; /* borde alrededor del contenido principal */
+        margin: 1rem;
+      }
+    </style>
   </head>
   <body>
-    <h1>Regístrate</h1>
+    <!-- Barra superior -->
+    <header style="display: flex; justify-content: space-between; align-items: center">
+      <h2>Mochileros Sin Fronteras</h2>
+      <!-- Barra de Navegación -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html">Experiencias</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="index.html">Foro</a></li>
+          <li><a href="compra.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Logo -->
+      <img
+        src="img/logo.png"
+        alt="Logo Mochileros Sin Fronteras"
+        style="width: 100px; height: auto"
+      />
+      <!-- Selector de Idiomas -->
+      <select name="idioma">
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <option value="de">Alemán</option>
+      </select>
+    </header>
+    <main>
+      <h1>Registro de nuevos usuarios</h1>
+
+      <!--Registro de nombre, apellidos y correo electrónico-->
+      <div>
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Apellidos">
+        <input type="email" placeholder="Correo electrónico">
+        <input type="email" placeholder="Confirmar Correo">
+      </div>
+
+      <!--Registro de fecha de nacimiento, no se si poner el date para que quede mejor o seguir exactamente la foto y poner
+          un type text con placeholder / /-->
+      <div>
+        <label for="fecha">Fecha de nacimiento</label>
+        <input id="fecha" placeholder="/ /">
+        <!--Alomejor no hace falta la foto-->
+        <img src="logo-calendario.png" alt="Calendario">
+      </div>
+
+      <!--Login y password-->
+      <div>
+        <input type="text" placeholder="login">
+        <input type="password" placeholder="password">
+      </div>
+      
+      <!--Imagen de perfil-->
+      <div>
+        <label for="examinar">Subir imagen de perfil</label>
+        <button id="examinar">Examinar...</button>
+      </div>
+
+      <!--Checkbox política privacidad-->
+      <div>
+        <label for="privacidad">Acepto la <a href="privacidad.htlm">Política de privacidad</a></label>
+        <input type="checkbox" id="privacidad">
+      </div>
+
+      <!--Botón guardar-->
+      <div>
+        <!--Usa java para volver a la página principal, seguramente haya que cambiarlo por un a y estilizarlo como botón-->
+        <button onclick="location.href='index.html'">Guardar datos y acceder</button>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer>
+      <p>@ 2025 Mochileros sin fronteras</p>
+      <a href="contacto.html">Sobre nosotros.</a>
+      <a href="index.html">Política de privacidad.</a>
+      <a href="contacto.html">Ayuda</a>
+      <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+      <a href="https://tiktok.com"><img src="img/tiktok.png" alt="Tiktok"></a>
+      <a href="https://youtube.com"><img src="img/youtube.png" alt="Youtube"></a>
+    </footer>
   </body>
 </html>
