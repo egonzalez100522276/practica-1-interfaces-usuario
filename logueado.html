@@ -3,10 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Usuario Logueado - Mochileros Sin Fronteras</title>
-    <link rel="stylesheet" href="style/styles.css" />
-  </head>
+    <title>Página Principal - Mochileros Sin Fronteras</title>
+    <link rel="stylesheet" href="style/style_logeado.css" /></head>
   <body>
-    <h1>Usuario Logueado</h1>
+  <!-- Barra superior -->
+    <header style="display: flex; justify-content: space-between; align-items: center">
+      <h2>Mochileros Sin Fronteras</h2>
+      <!-- Barra de Navegación -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html">Experiencias</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="index.html">Foro</a></li>
+          <li><a href="compra.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Logo -->
+      <img
+        src="img/logo.png"
+        alt="Logo Mochileros Sin Fronteras"
+        style="width: 100px; height: auto"
+      />
+      <!-- Selector de Idiomas -->
+      <select name="idioma">
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <option value="de">Alemán</option>
+      </select>
+
+    </header>
+    <main  style="display: flex;">
+      <!-- Sección izquierda -->
+      <section id="left-section">
+        <h2>Comparte y descubre viajes mochileros de larga distancia</h2>
+        <!-- Contenido destacado -->
+        <section style="display: grid;">
+          <h3>Pack Sudeste Asiático</h3>
+          <p>€600</p>
+          <p>Vietnam & Camboya: buses, hostales y quía de visados</p>
+          <button> <a href="compra.htmt">Comprar</a></button>
+        </section>
+        <!-- Carrusel de experiencias -->
+         <section>
+            <h3>Experiencias de la comunidad mochilera</h3>
+            <div id="experiencia1" class="experience-card">
+              <h4>Hotel en Katmandú</h4>
+              <img src="" alt="Experiencia en Katmandú">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+            <div id="experiencia2" class="experience-card">
+              <h4>Sudamérica en bus</h4>
+              <img src="" alt="Experiencia en Sudamérica">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+            <div id="experiencia3" class="experience-card">
+              <h4>Visado para India</h4>
+              <img src="" alt="Experiencia en India">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+            <div id="experiencia4" class="experience-card">
+              <h4>Vietnam: ruta en moto</h4>
+              <img src="" alt="Experiencia en Vietnam">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+            <div id="experiencia5" class="experience-card">
+              <h4>Trekking en Perú</h4>
+              <img src="" alt="Experiencia en Perú">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+            <div id="experiencia6" class="experience-card">
+              <h4>Safari en Tanzania</h4>
+              <img src="" alt="Experiencia en Tanzania">
+              <p>🤍</p>
+              <button> <a href="index.html">Ver más</a></button>
+            </div>
+          </section>
+      </section>
+      <!-- Barra lateral -->
+      <aside>
+        <!--Información de usuario-->
+        <div>
+          <p>Nombre de usuario</p>
+          <img src="foto-perfi.png" alt="Foto de perfil">
+          <button>Cerrar sesión</button>
+        </div>
+
+        <hr>
+        <!--Buscador de experiencias-->
+        <h4>Busca experiencias</h4>
+        <!--Checkboxes-->
+        <div class="checkbox-grid">
+        <input type="checkbox" id="america">
+        <label for="america">América</label>
+        <input type="checkbox" id="europa">
+        <label for="europa">Europa</label>
+        <input type="checkbox" id="asia">
+        <label for="asia">Asia</label>
+        <input type="checkbox" id="africa">
+        <label for="africa">África</label>
+        </div>
+        <!--Searchbar-->
+        <div class="search-bar">
+        <input type="text" placeholder="Search">
+        </div>
+        <hr>    
+        <!-- Consejos -->
+         <div>
+         <h4>Últimos consejos</h4>
+         <ul>
+          <!--A los links que no funcionan le ponemos #-->
+            <li><a href="#">Cómo ahorrar dinero en hostales</a></li>
+            <li><a href="#">Mejores apps para planear viajes</a></li>
+            <li><a href="#">Visados fáciles en Asia</a></li>
+         </ul>
+        </div>
+        <!--Sugerencia Consejos-->
+         <h4>¿Tienes algún consejo?</h4>
+         <form>
+         <input type="text" placeholder="Título del consejo">
+         <input type="text" placeholder="Escribe aquí tu consejo">
+         <button>Enviar</button>
+         </form>
+        <!--Calendario-->
+        <img src="img/calendario.png" alt="calendario">
+         
+      </aside>
+    </main>
+    <footer>
+      <p>@ 2025 Mochileros sin fronteras</p>
+      <a href="contacto.html">Sobre nosotros.</a>
+      <a href="index.html">Política de privacidad.</a>
+      <a href="contacto.html">Ayuda</a>
+      <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+      <a href="https://tiktok.com"><img src="img/tiktok.png" alt="Tiktok"></a>
+      <a href="https://youtube.com"><img src="img/youtube.png" alt="Youtube"></a>
+    </footer>
+    </body>
   </body>
 </html>
