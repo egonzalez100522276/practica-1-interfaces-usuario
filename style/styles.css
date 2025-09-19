@@ -84,6 +84,8 @@ nav ul li a:hover {
   align-items: center;
   padding: 20px;
   border: 2px solid #ccc;
+  background: linear-gradient(135deg, #d0c5db, #a7bce2);
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
@@ -95,15 +97,40 @@ nav ul li a:hover {
 }
 
 .buy-button {
-  background-color: gray;
+  margin-top: 40px;
+  margin-left: auto;
+  background-color: rgb(34, 167, 255);
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
 }
 
 .buy-button:hover {
-  background-color: #0056b3;
+  background-color: rgb(40, 200, 255);
+}
+.buy-button a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  
+}
+
+/* Experiences section */
+
+.carrousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgb(186, 186, 245), rgb(211, 206, 206));
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
