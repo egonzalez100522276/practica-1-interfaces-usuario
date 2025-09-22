@@ -9,10 +9,18 @@ main {
 
 /* Header */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #ccc;
+  /* Fondo glassmporphism */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* borde sutil */
+  border-radius: 15px;
   width: 100%;
 }
 
@@ -67,6 +75,28 @@ nav ul li a:hover {
 
 /* Highlighted packs section */
 
+.highlighted {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.highlighted i {
+  display: flex; /* convierte el i en flex */
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.highlighted i:hover {
+  transform: scale(1.1);
+}
+
 .highlighted-content {
   display: flex;
   flex-direction: column;
@@ -115,7 +145,6 @@ nav ul li a:hover {
   text-decoration: none;
   color: white;
   font-size: 0.9rem;
-  
 }
 
 /* Experiences section */
