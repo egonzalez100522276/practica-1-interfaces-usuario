@@ -66,7 +66,7 @@ nav ul li a:hover {
 }
 
 .logo {
-  height: 80px;
+  height: 90px;
   width: 100%;
   transition: transform 0.2s ease;
 }
@@ -207,4 +207,58 @@ nav ul li a:hover {
   background: linear-gradient(135deg, rgb(186, 186, 245), rgb(211, 206, 206));
   border: 1px solid #ccc;
   border-radius: 10px;
+}
+
+/*Aside*/
+aside {
+  padding: 16px;
+  background: #f7f9fb;
+  border: 2px solid #000000; /* bordes en todo el contorno */
+  margin: 30px;
+}
+
+/* Formulario login */
+.login-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aunque quede feo así está en la foto */
+  gap: 8px;
+}
+
+.login-buttons {
+  display: flex;
+  flex:1;
+  gap: 5px;
+}
+
+/*
+#btn-registrarse {
+quitar el estilo de link
+*/
+
+.login-buttons button {
+  flex: 1;
+}
+
+/*Quitar bullets de las listas*/
+
+.top-destinos-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.consejos-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.proximos-list {
+  list-style: none;
+  padding-left: 0;
 }

@@ -101,7 +101,7 @@
                 <h4>Safari en Tanzania</h4>
                 <img src="" alt="Experiencia en Tanzania">
                 <i class="fa fa-heart-o"></i>
-                <button> <a href="index.html">Ver más</a></button>
+                <button><a href="index.html">Ver más</a></button>
               </div>
             </div>
           </section>
@@ -112,29 +112,33 @@
         <form action="" class="login-form">
           <input type="text" placeholder="Usuario">
           <input type="text" placeholder="Contraseña">
-          <input type="checkbox" id="recordar">
-          <label for="recordar">Recordar credenciales</label>
+          <div class="remember">
+            <input type="checkbox" id="recordar" name="recordar">
+            <label for="recordar">Recordar credenciales</label>
+          </div>
+          <div class="login-buttons">
           <button type="submit">Iniciar sesión</button>
-          <button type="submit">Registrarse</button>
+          <button id="btn-registrarse"><a href="registro.html">Registrarse</a></button>
+          </div>
         </form>
         <hr>
         <!-- Destinos destacados -->
-        <h4>Top destions mochileros</h4>
-        <ul>
+        <h4>Top destinos mochileros</h4>
+        <ul class="top-destinos-list">
           <li>Tailandia</li>
           <li>Bolivia</li>
           <li>Nepal</li>
         </ul>
         <!-- Consejos -->
          <h4>Consejos rápidos</h4>
-         <ul>
+         <ul class="consejos-list">
             <li>Lleva seguro médico</li>
             <li>Infórmate sobre visados</li>
             <li>Viaja ligero</li>
          </ul>
         <!-- Próximos encuentros -->
          <h4>Próximos encuentros</h4>
-         <ul>
+         <ul class="proximos-list">
           <li>Madrid · 12/10</li>
           <li>Barcelona · 25/10</li>
           <li>Valencia · 08/11</li>
