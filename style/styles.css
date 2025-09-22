@@ -1,5 +1,5 @@
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 main {
@@ -16,12 +16,19 @@ header {
   justify-content: space-between;
   align-items: center;
   /* Fondo glassmporphism */
-  background: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    135deg,
+    rgba(34, 139, 34, 0.25),
+    rgba(107, 72, 34, 0.25) /* marrón terroso */
+  );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3); /* borde sutil */
   border-radius: 15px;
   width: 100%;
+}
+header h2 {
+  margin-left: 20px;
 }
 
 nav {
@@ -43,13 +50,14 @@ nav ul li a {
   text-decoration: none;
   color: black;
   padding: 20px;
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 550;
+  font-size: 1.2rem;
   transition: font-size 0.2s ease;
 }
 nav ul li a:hover {
   scale: 1.05;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  text-decoration: underline;
 }
 
 .nav-container {
@@ -69,11 +77,32 @@ nav ul li a:hover {
 }
 .idiom-select {
   height: 40px;
-  border: 2px solid #ccc;
+  /* border: 2px solid #c4c2c2; */
   border-radius: 10%;
+  background: #a7bce2;
 }
 
 /* Highlighted packs section */
+
+.highlighted-content {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+  background-image: url("/img/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.highlighted-content h2 {
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px 1px 2px rgba(0, 0, 0, 0.5),
+    1px -1px 2px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(0, 0, 0, 0.5);
+}
 
 .highlighted {
   display: flex;
@@ -81,14 +110,17 @@ nav ul li a:hover {
   justify-content: space-around;
   width: 100%;
 }
+
 .highlighted i {
+  color: black;
   display: flex; /* convierte el i en flex */
   justify-content: center;
   align-items: center;
   width: 3rem;
   height: 3rem;
   font-size: 1.5rem;
-  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ffffff;
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -97,25 +129,18 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
-.highlighted-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border: 2px solid #ccc;
-  margin-bottom: 20px;
-}
-
 .highlighted-card {
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* negro semi-transparente */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px); /* efecto cristal suavizado */
   padding: 20px;
-  border: 2px solid #ccc;
-  background: linear-gradient(135deg, #d0c5db, #a7bce2);
-  border-radius: 10px;
+  border: 3px solid #ffffff;
   margin-bottom: 20px;
 }
 
@@ -123,7 +148,33 @@ nav ul li a:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-size: 1.2rem;
   align-items: center;
+}
+#pack-asia-label h3 {
+  padding-right: 4rem;
+  font-size: 1.8rem;
+}
+#pack-asia-label p {
+  display: inline-block; /* Para que el tamaño se ajuste al contenido */
+  background: linear-gradient(
+    135deg,
+    #a3e4d7,
+    #76d7c4
+  ); /* verde suave degradado */
+  color: #fff; /* texto blanco para contraste */
+  padding: 10px 20px; /* más espacio alrededor del texto */
+  font-size: 1.8rem; /* un poco más grande */
+  font-weight: bold; /* resalta el precio */
+  border-radius: 25px; /* bordes más redondeados tipo etiqueta */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* sombra para efecto flotante */
+  position: relative; /* para añadir “punta” de etiqueta si quieres */
+  text-align: center;
+  transition: transform 0.2s; /* efecto hover */
+}
+
+#pack-asia-label p:hover {
+  transform: scale(1.1); /* crece un poco al pasar el mouse */
 }
 
 .buy-button {
