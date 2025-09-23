@@ -292,10 +292,6 @@ aside {
   text-decoration: none;
   color: #000;
 }
-/*
-#btn-registrarse {
-quitar el estilo de link
-*/
 
 .login-buttons button {
   flex: 1;
@@ -317,3 +313,64 @@ quitar el estilo de link
   list-style: none;
   padding-left: 0;
 }
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(7, 36, 22, 0.9);
+  color: white;
+  padding: 30px 30px;
+  font-size: 16px;
+}
+
+footer p {
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+footer .footer-links {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+footer .footer-icons {
+  display: flex;
+  gap: 30px;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+footer .footer-icons a i {
+  font-size: 25px;
+  transition: transform 0.2s ease;
+}
+
+footer .footer-icons a i:hover {
+  transform: scale(1.2);
+}
+
+footer .footer-links a {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+footer .footer-links a:hover {
+  transform: scale(1.1);
+}
+
+
+
+
