@@ -142,6 +142,7 @@ nav ul li a:hover {
 .highlighted-card {
   color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -151,7 +152,7 @@ nav ul li a:hover {
   backdrop-filter: blur(5px);
   padding: 20px;
   border: 3px solid #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 #pack-asia-label {
@@ -162,12 +163,12 @@ nav ul li a:hover {
   align-items: center;
 }
 #pack-asia-label h3 {
-  padding-right: 4rem;
   font-size: 1.8rem;
 }
-#pack-asia-label p {
-  display: inline-block;
+#price-tag {
+  display: inline;
   background: linear-gradient(135deg, #7ddcc9, #37c4a8);
+  white-space: nowrap;
   color: #fff;
   padding: 10px 20px;
   font-size: 1.8rem;
@@ -232,8 +233,8 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #ccc;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid black;
   border-radius: 10px;
 }
 
@@ -289,7 +290,7 @@ nav ul li a:hover {
 
 /*Aside*/
 aside {
-  padding: 16px;
+  padding: 1rem;
   background: #f7f9fb;
   border-left: 2px solid #000000;
   background-color: rgba(255, 255, 255, 0.7);
@@ -300,6 +301,11 @@ aside {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+}
+.login-form input {
+  border: 1px solid black;
+  min-height: 1.5rem;
+  border-radius: 5px;
 }
 
 .remember {
@@ -333,9 +339,18 @@ aside {
 }
 
 /*Quitar bullets de las listas*/
+aside ul {
+  line-height: 1.5rem;
+}
 aside li {
   list-style: none;
   padding-left: 0;
+  font-size: 1.2rem;
+}
+aside h4 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 
