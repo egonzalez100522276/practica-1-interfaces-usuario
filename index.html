@@ -17,30 +17,30 @@
     <header>
       <h2>Mochileros Sin Fronteras</h2>
       <!-- Barra de Navegación -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="index.html">Experiencias</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="index.html">Foro</a></li>
-          <li><a href="compra.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <!-- Logo -->
-      <div class="nav-container">
-        <img
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Experiencias</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="index.html">Foro</a></li>
+            <li><a href="compra.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- Logo -->
+        <div class="nav-container">
+          <img
           src="img/logo.png"
           alt="Logo Mochileros Sin Fronteras"
           class="logo"
-        />
-        <!-- Selector de Idiomas -->
-        <select name="idiom" class="idiom-select">
-          <option value="es">ES</option>
-          <option value="en">EN</option>
-          <option value="fr">FR</option>
-          <option value="de">DE</option>
-        </select>
-    </div>
+          />
+          <!-- Selector de Idiomas -->
+          <select name="idiom" class="idiom-select">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="de">DE</option>
+          </select>
+        </div>
 
     </header>
     <main>
@@ -71,7 +71,7 @@
                 <div class="experience-card-body">
                   <img src="/img/experience-1.png" alt="Experiencia en Katmandú">
                   <div class="experience-card-actions">
-                    <i class="fa fa-heart-o"></i>
+                    <i class="far fa-heart"></i>
                     <button> <a href="index.html">Ver más</a></button>
                   </div>
                 </div>
@@ -81,7 +81,7 @@
                 <div class="experience-card-body">
                   <img src="/img/experience-2.png" alt="Experiencia en Sudamérica">
                   <div class="experience-card-actions">
-                    <i class="fa fa-heart-o"></i>
+                    <i class="far fa-heart"></i>
                     <button> <a href="index.html">Ver más</a></button>
                   </div>
                 </div>
@@ -91,7 +91,7 @@
                 <div class="experience-card-body">
                   <img src="/img/experience-3.png" alt="Experiencia en India">
                   <div class="experience-card-actions">
-                    <i class="fa fa-heart-o"></i>
+                    <i class="far fa-heart"></i>
                     <button> <a href="index.html">Ver más</a></button>
                   </div>
                 </div>    
@@ -101,7 +101,7 @@
                 <div class="experience-card-body">
                   <img src="/img/experience-4.png" alt="Experiencia en Vietnam">
                   <div class="experience-card-actions">
-                    <i class="fa fa-heart-o"></i>
+                   <i class="far fa-heart"></i>
                     <button> <a href="index.html">Ver más</a></button>
                   </div>
                 </div>      
@@ -111,7 +111,7 @@
                 <div class="experience-card-body">
                   <img src="/img/experience-5.png" alt="Experiencia en Perú">
                   <div class="experience-card-actions">
-                    <i class="fa fa-heart-o"></i>
+                    <i class="far fa-heart"></i>
                     <button> <a href="index.html">Ver más</a></button>
                   </div>
                 </div>      
@@ -121,7 +121,7 @@
                 <div class="experience-card-body">
                   <img src="/img/experience-6.png" alt="Experiencia en Tanzania">
                   <div class="experience-card-actions">
-                    <i class="fa fa-heart-o"></i>
+                    <i class="far fa-heart"></i>
                     <button> <a href="index.html">Ver más</a></button>
                   </div>
                 </div>      
@@ -132,16 +132,16 @@
       <!-- Barra lateral -->
       <aside>
         <!-- Formulario de registro / inicio de sesión -->
-        <form action="" class="login-form">
-          <input type="text" placeholder="Usuario">
-          <input type="text" placeholder="Contraseña">
+        <form action="index.html" class="login-form">
+          <input type="text" placeholder="Usuario"  required="true">
+          <input type="text" placeholder="Contraseña"  required="true">
           <div class="remember">
-            <input type="checkbox" id="recordar" name="recordar">
+            <input type="checkbox" id="recordar" name="recordar"">
             <label for="recordar">Recordar credenciales</label>
           </div>
           <div class="login-buttons">
-          <button type="submit"><a href="index.html">Iniciar sesión</a></button>
-          <button id="btn-registrarse"><a href="registro.html">Registrarse</a></button>
+            <button type="submit">Iniciar sesión</button>
+            <a href="registro.html" id="btn-registrarse" class="btn">Registrarse</a>
           </div>
         </form>
         <hr>

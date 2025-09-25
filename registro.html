@@ -4,15 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro - Mochileros Sin Fronteras</title>
-    <link rel="stylesheet" href="style/styles.css" />
-    <!--CSS temporal antes de pasarlo al archivo style.css-->
-    <style>
-      main {
-        padding: 1rem;
-        border: 1px solid #000; /* borde alrededor del contenido principal */
-        margin: 1rem;
-      }
-    </style>
+    <link rel="stylesheet" href="style/style_registro.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <!-- Barra superior -->
@@ -43,33 +38,34 @@
         </select>
     </header>
     <main>
-      <h1>Registro de nuevos usuarios</h1>
-
       <!--Registro de nombre, apellidos y correo electrónico-->
-      <div>
+      <section class = "caja-registro">
+        <h1>Registro de nuevos usuarios</h1>
+      <div class="grid-2x2">
         <input type="text" placeholder="Nombre">
         <input type="text" placeholder="Apellidos">
         <input type="email" placeholder="Correo electrónico">
         <input type="email" placeholder="Confirmar Correo">
       </div>
 
-      <!--Registro de fecha de nacimiento, no se si poner el date para que quede mejor o seguir exactamente la foto y poner
-          un type text con placeholder / /-->
-      <div>
+      <!--Bloque fecha-->
+      <div class="bloque-fecha">
         <label for="fecha">Fecha de nacimiento</label>
+        <div class="fecha-input">
         <input id="fecha" placeholder="/ /">
-        <!--Alomejor no hace falta la foto-->
-        <img src="logo-calendario.png" alt="Calendario">
+        <!--icono calendario-->
+        <i class="fa-regular fa-calendar"></i>
+        </div>
       </div>
 
       <!--Login y password-->
-      <div>
+      <div class="bloque-login">
         <input type="text" placeholder="login">
         <input type="password" placeholder="password">
       </div>
       
       <!--Imagen de perfil-->
-      <div>
+      <div class="bloque-imagen">
         <label for="examinar">Subir imagen de perfil</label>
         <button id="examinar">Examinar...</button>
       </div>
@@ -81,20 +77,26 @@
       </div>
 
       <!--Botón guardar-->
-      <div>
-        <!--Usa java para volver a la página principal, seguramente haya que cambiarlo por un a y estilizarlo como botón-->
-        <button onclick="location.href='index.html'">Guardar datos y acceder</button>
+      <div class="boton-guardar">
+        <button><a href="index.html">Guardar y salir</a><button>
       </div>
+      </section>
     </main>
     <!--Footer-->
     <footer>
       <p>@ 2025 Mochileros sin fronteras</p>
+      <div class ="footer-links">
       <a href="contacto.html">Sobre nosotros.</a>
       <a href="index.html">Política de privacidad.</a>
       <a href="contacto.html">Ayuda</a>
-      <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
-      <a href="https://tiktok.com"><img src="img/tiktok.png" alt="Tiktok"></a>
-      <a href="https://youtube.com"><img src="img/youtube.png" alt="Youtube"></a>
+      </div>
+
+      <div class="footer-icons">
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+        <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+      </div>
     </footer>
+    </body>
   </body>
 </html>
