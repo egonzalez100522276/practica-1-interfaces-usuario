@@ -1,15 +1,43 @@
-html, body {
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 0;
+  font-family: "Lato", sans-serif;
   margin: 0;
-  height: 100%;
+  background-image: url("/img/background.png");
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  place-items: start center;
+  padding: 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.3); /* overlay como en la home */
+}
+
+.caja-registro {
+  width: min(920px, 100%);
+  background: rgba(255, 255, 255, 0.853);
+  border: 2px solid #000;
+  padding: 1.5rem;
+  border-radius: 10px;
 }
 
 /* Header */
 header {
   color: #fff;
   position: sticky;
+  width: 100%;
   top: 0;
   z-index: 1000;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   background: rgba(7, 36, 22, 0.9);
@@ -18,6 +46,7 @@ header {
   width: 100%;
   height: auto;
 }
+
 header h2 {
   margin-left: 20px;
   font-size: 2rem;
@@ -32,6 +61,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 0;
   justify-content: center;
@@ -54,15 +84,17 @@ nav ul li a:hover {
 
 .nav-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0.5rem;
   gap: 20px;
 }
 
 .logo {
-  height: 80px;
-  width: 100%;
+  max-width: 80px;
+  width: auto;
+  height: auto;
   transition: transform 0.2s ease;
 }
 .logo:hover {
@@ -74,6 +106,85 @@ nav ul li a:hover {
   background: #fbfcff;
 }
 
+h1 { 
+    text-align: center;
+    margin-top: 0px;
+ }
+
+ .grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.bloque-fecha {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 1rem 0;
+}
+
+.fecha-input {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.bloque-login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.bloque-imagen {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 1rem 0;
+}
+
+.bloque-imagen button {
+    width: 10rem;
+}
+
+.boton-guardar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.boton-guardar button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.boton-guardar button a:visited {
+  color: inherit;
+} 
+
+input,
+select,
+button {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+button:hover {
+  border-color: #0a7c5a;
+  box-shadow: 0 0 6px rgba(10, 124, 90, 0.4);
+  outline: none;
+}
+
+main > div {
+  margin-bottom: 3rem;
+}
+
 /*Footer*/
 footer {
   display: flex;
@@ -81,6 +192,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(7, 36, 22, 0.9);
+  border-top: 4px solid rgb(200, 200, 200);
   color: white;
   padding: 30px 30px;
   font-size: 16px;
@@ -131,77 +243,77 @@ footer .footer-links a:hover {
   transform: scale(1.1);
 }
 
-/*Main*/
-body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+/* Tablets (<=768px) */
+@media (max-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  header h2 {
+    grid-column: 1 / -1;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
+  .nav-container {
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .logo {
+    max-width: 64px;
+  }
+
+  .grid-2x2 {
+    grid-template-columns: 1fr; /* apila campos */
+  }
+
+  .bloque-login {
+    grid-template-columns: 1fr; /* apila login y password */
+  }
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
-main {
-  max-width: 900px;
-  margin: 1rem auto;
-  padding: 1.25rem;
-  border: 2px solid #000000;
-  background: #fff;
-  flex: 1;
-}
+/* Móviles (<=600px) */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-h1 { 
+  nav ul {
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .caja-registro {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  footer {
+    flex-direction: column;
     text-align: center;
-    margin-top: 0px;
- }
-
- .grid-2x2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.bloque-fecha {
-  display: flex;
-  flex-direction: column;
-  gap: 10x;
-  margin: 1rem 0;
-}
-
-.fecha-input {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-}
-
-.bloque-login {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.bloque-imagen {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-.bloque-imagen button {
-    width: 10rem;
-}
-
-.boton-guardar {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1rem;
-}
-
-input, select, button {
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-}
-
-main > div {
-  margin-bottom: 3rem;
+    gap: 15px;
+  }
 }
 
