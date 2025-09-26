@@ -11,31 +11,33 @@
   </head>
   <body>
     <!-- Barra superior -->
-    <header style="display: flex; justify-content: space-between; align-items: center">
+    <header>
       <h2>Mochileros Sin Fronteras</h2>
       <!-- Barra de Navegación -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="index.html">Experiencias</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="index.html">Foro</a></li>
-          <li><a href="compra.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <!-- Logo -->
-      <img
-        src="img/logo.png"
-        alt="Logo Mochileros Sin Fronteras"
-        style="width: 100px; height: auto"
-      />
-      <!-- Selector de Idiomas -->
-        <select name="idiom" class="idiom-select">
-          <option value="es">ES</option>
-          <option value="en">EN</option>
-          <option value="fr">FR</option>
-          <option value="de">DE</option>
-        </select>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Experiencias</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="index.html">Foro</a></li>
+            <li><a href="compra.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- Logo -->
+        <div class="nav-container">
+          <img
+          src="img/logo.png"
+          alt="Logo Mochileros Sin Fronteras"
+          class="logo"
+          />
+          <!-- Selector de Idiomas -->
+          <select name="idiom" class="idiom-select">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="de">DE</option>
+          </select>
+        </div>
     </header>
     <main>
       <!--Registro de nombre, apellidos y correo electrónico-->
