@@ -1,0 +1,44 @@
+@import url("./styles.css");
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.search-bar {
+  position: relative;
+  width: 30rem;
+  justify-self: center;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-bar::before {
+  content: "🔍  ";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #888;
+}
+
+#calendar-img {
+  margin-top: 2rem;
+  width: 80%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}

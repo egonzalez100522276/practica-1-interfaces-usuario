@@ -6,145 +6,175 @@
     <title>Mochileros Sin Fronteras</title>
     <!-- Iconos y estilos -->
     <link rel="stylesheet" href="style/styles.css" />
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-    
+
   <body>
-  <!-- Barra superior -->
+    <!-- Barra superior -->
     <header>
       <h2>Mochileros Sin Fronteras</h2>
       <!-- Barra de Navegación -->
-        <nav>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html">Experiencias</a></li>
-            <li><a href="registro.html">Registro</a></li>
-            <li><a href="index.html">Foro</a></li>
-            <li><a href="compra.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <!-- Logo -->
-        <div class="nav-container">
-          <img
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html">Experiencias</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="index.html">Foro</a></li>
+          <li><a href="compra.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Logo -->
+      <div class="nav-container">
+        <img
           src="img/logo.png"
           alt="Logo Mochileros Sin Fronteras"
           class="logo"
-          />
-          <!-- Selector de Idiomas -->
-          <select name="idiom" class="idiom-select">
-            <option value="es">ES</option>
-            <option value="en">EN</option>
-            <option value="fr">FR</option>
-            <option value="de">DE</option>
-          </select>
-        </div>
-
+        />
+        <!-- Selector de Idiomas -->
+        <select name="idiom" class="idiom-select">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+        </select>
+      </div>
     </header>
     <main>
       <!-- Sección izquierda -->
       <section id="left-section">
         <section class="highlighted-content">
-        <h2>Comparte y descubre viajes mochileros de larga distancia</h2>
-        <!-- Contenido destacado -->
-         <div class="highlighted">
+          <h2>Comparte y descubre viajes mochileros de larga distancia</h2>
+          <!-- Contenido destacado -->
+          <div class="highlighted">
             <i class="fa fa-angle-left"></i>
             <div class="highlighted-card">
               <div id="pack-asia-label">
                 <h3>Pack Sudeste Asiático</h3>
                 <p id="price-tag">€ 600</p>
               </div>
-                <p id="pack-asia-desc">Vietnam & Camboya: buses, hostales y guía de visados</p>
-                <a href="compra.html" class="buy-button">Comprar</a>
-              </div>
+              <p id="pack-asia-desc">
+                Vietnam & Camboya: buses, hostales y guía de visados
+              </p>
+              <a href="compra.html" class="buy-button">Comprar</a>
+            </div>
             <i class="fa fa-angle-right"></i>
           </div>
         </section>
         <!-- Carrusel de experiencias -->
-         <section class="experiences">
-            <h2>Experiencias de la comunidad mochilera</h3>
-            <div class="carrousel">
-              <div id="experiencia1" class="experience-card">
-                <h3>Hotel en Katmandú</h3>
-                <div class="experience-card-body">
-                  <img src="/img/experience-1.png" alt="Experiencia en Katmandú">
-                  <div class="experience-card-actions">
-                    <i class="far fa-heart"></i>
-                    <a href="index.html">Ver más</a>
-                  </div>
+        <section class="experiences">
+          <h2>Experiencias de la comunidad mochilera</h2>
+          <div class="carrousel">
+            <div id="experiencia1" class="experience-card">
+              <h3>Hotel en Katmandú</h3>
+              <div class="experience-card-body">
+                <img
+                  src="/img/experience-1.png"
+                  alt="Experiencia en Katmandú"
+                />
+                <div class="experience-card-actions">
+                  <i class="far fa-heart"></i>
+                  <a href="index.html">Ver más</a>
                 </div>
-              </div>
-              <div id="experiencia2" class="experience-card">
-                <h3>Acampada en Mongolia</h3>
-                <div class="experience-card-body">
-                  <img src="/img/experience-2-3.png" alt="Experiencia en Sudamérica">
-                  <div class="experience-card-actions">
-                    <i class="far fa-heart"></i>
-                    <a href="index.html">Ver más</a>
-                  </div>
-                </div>
-              </div>
-              <div id="experiencia3" class="experience-card">
-                <h3>Visado para India</h3>
-                <div class="experience-card-body">
-                  <img src="/img/experience-3.png" alt="Experiencia en India">
-                  <div class="experience-card-actions">
-                    <i class="far fa-heart"></i>
-                    <a href="index.html">Ver más</a>
-                  </div>
-                </div>    
-              </div>
-              <div id="experiencia4" class="experience-card">
-                <h3>Vietnam: ruta en moto</h3>
-                <div class="experience-card-body">
-                  <img src="/img/experience-4-2.png" alt="Experiencia en Vietnam">
-                  <div class="experience-card-actions">
-                   <i class="far fa-heart"></i>
-                    <a href="index.html">Ver más</a>
-                  </div>
-                </div>      
-              </div>
-              <div id="experiencia5" class="experience-card">
-                <h3>Trekking en Perú</h3>
-                <div class="experience-card-body">
-                  <img src="/img/experience-5.png" alt="Experiencia en Perú">
-                  <div class="experience-card-actions">
-                    <i class="far fa-heart"></i>
-                    <a href="index.html">Ver más</a>
-                  </div>
-                </div>      
-              </div>
-              <div id="experiencia6" class="experience-card">
-                <h3>Safari en Tanzania</h3>
-                <div class="experience-card-body">
-                  <img src="/img/experience-6.png" alt="Experiencia en Tanzania">
-                  <div class="experience-card-actions">
-                    <i class="far fa-heart"></i>
-                    <a href="index.html">Ver más</a>
-                  </div>
-                </div>      
               </div>
             </div>
-          </section>
+            <div id="experiencia2" class="experience-card">
+              <h3>Acampada en Mongolia</h3>
+              <div class="experience-card-body">
+                <img
+                  src="/img/experience-2-3.png"
+                  alt="Experiencia en Sudamérica"
+                />
+                <div class="experience-card-actions">
+                  <i class="far fa-heart"></i>
+                  <a href="index.html">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div id="experiencia3" class="experience-card">
+              <h3>Visado para India</h3>
+              <div class="experience-card-body">
+                <img src="/img/experience-3.png" alt="Experiencia en India" />
+                <div class="experience-card-actions">
+                  <i class="far fa-heart"></i>
+                  <a href="index.html">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div id="experiencia4" class="experience-card">
+              <h3>Vietnam: ruta en moto</h3>
+              <div class="experience-card-body">
+                <img
+                  src="/img/experience-4-2.png"
+                  alt="Experiencia en Vietnam"
+                />
+                <div class="experience-card-actions">
+                  <i class="far fa-heart"></i>
+                  <a href="index.html">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div id="experiencia5" class="experience-card">
+              <h3>Trekking en Perú</h3>
+              <div class="experience-card-body">
+                <img src="/img/experience-5.png" alt="Experiencia en Perú" />
+                <div class="experience-card-actions">
+                  <i class="far fa-heart"></i>
+                  <a href="index.html">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <div id="experiencia6" class="experience-card">
+              <h3>Safari en Tanzania</h3>
+              <div class="experience-card-body">
+                <img
+                  src="/img/experience-6.png"
+                  alt="Experiencia en Tanzania"
+                />
+                <div class="experience-card-actions">
+                  <i class="far fa-heart"></i>
+                  <a href="index.html">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
       <!-- Barra lateral -->
       <aside>
         <!-- Formulario de registro / inicio de sesión -->
         <form action="index.html" class="login-form">
-          <input type="text" placeholder="Usuario..."  required="true" id="user">
-          <input type="text" placeholder="Contraseña..."  required="true" id="password">
+          <input
+            type="text"
+            placeholder="Usuario..."
+            required="true"
+            id="user"
+          />
+          <input
+            type="text"
+            placeholder="Contraseña..."
+            required="true"
+            id="password"
+          />
           <div class="remember">
-            <input type="checkbox" id="recordar" name="recordar">
+            <input type="checkbox" id="recordar" name="recordar" />
             <label for="recordar">Recordar credenciales</label>
           </div>
           <div class="login-buttons">
             <button type="submit">Iniciar sesión</button>
-            <a href="registro.html" id="btn-registrarse" class="btn">Registrarse</a>
+            <a href="registro.html" id="btn-registrarse" class="btn"
+              >Registrarse</a
+            >
           </div>
         </form>
-        <hr>
+        <hr />
         <!-- Destinos destacados -->
         <h4>Top destinos mochileros</h4>
         <ul class="top-destinos-list">
@@ -153,28 +183,28 @@
           <li>Nepal</li>
         </ul>
         <!-- Consejos -->
-         <h4>Consejos rápidos</h4>
-         <ul class="consejos-list">
-            <li>Lleva seguro médico</li>
-            <li>Infórmate sobre visados</li>
-            <li>Viaja ligero</li>
-         </ul>
+        <h4>Consejos rápidos</h4>
+        <ul class="consejos-list">
+          <li>Lleva seguro médico</li>
+          <li>Infórmate sobre visados</li>
+          <li>Viaja ligero</li>
+        </ul>
         <!-- Próximos encuentros -->
-         <h4>Próximos encuentros</h4>
-         <ul class="proximos-list">
+        <h4>Próximos encuentros</h4>
+        <ul class="proximos-list">
           <li>Madrid · 12/10</li>
           <li>Barcelona · 25/10</li>
           <li>Valencia · 08/11</li>
-         </ul>
+        </ul>
       </aside>
     </main>
     <!--Footer-->
     <footer>
       <p>@ 2025 Mochileros sin fronteras</p>
-      <div class ="footer-links">
-      <a href="contacto.html">Sobre nosotros.</a>
-      <a href="index.html">Política de privacidad.</a>
-      <a href="contacto.html">Ayuda</a>
+      <div class="footer-links">
+        <a href="contacto.html">Sobre nosotros.</a>
+        <a href="index.html">Política de privacidad.</a>
+        <a href="contacto.html">Ayuda</a>
       </div>
 
       <div class="footer-icons">
@@ -183,6 +213,5 @@
         <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
       </div>
     </footer>
-    </body>
   </body>
 </html>
