@@ -1,5 +1,36 @@
 @import url("./styles.css");
 
+/* User info */
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-actions img {
+  max-width: 5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.user-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-actions a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.33rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.user-actions a:hover {
+  transform: scale(1.05);
+}
+
 /* Search Section */
 
 .checkbox-grid {
@@ -14,7 +45,7 @@
 
 .search-bar {
   position: relative;
-  width: 30rem;
+  max-width: 30rem;
   justify-self: center;
 }
 
@@ -53,20 +84,21 @@
 
 .advice-form {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  margin-left: 1rem;
   gap: 1rem;
   padding: 20px;
 }
 .advice-form input {
   font-size: 1.2rem;
-  width: fit-content;
+  max-width: fit-content;
   height: 2rem;
   border: 2px solid #ccc;
   border-radius: 5px;
 }
 #advice-form-last-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 4rem;
 }
 

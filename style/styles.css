@@ -342,9 +342,19 @@ aside ul {
   line-height: 1.5rem;
 }
 aside li {
+  width: max-content;
   list-style: none;
   padding-left: 0;
   font-size: 1.2rem;
+}
+.aside-list li {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease;
+}
+.aside-list li:hover {
+  color: blue;
+  transform: scale(1.05);
 }
 aside h4 {
   font-size: 1.5rem;
