@@ -3,93 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro - Mochileros Sin Fronteras</title>
-    <link rel="stylesheet" href="style/style_registro.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
+    <title>Mochileros Sin Fronteras</title>
+    <link rel="stylesheet" href="style/styleS_registro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Barra superior -->
     <header>
       <h2>Mochileros Sin Fronteras</h2>
       <!-- Barra de Navegación -->
-        <nav>
-          <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html">Experiencias</a></li>
-            <li><a href="registro.html">Registro</a></li>
-            <li><a href="index.html">Foro</a></li>
-            <li><a href="compra.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <!-- Logo -->
-        <div class="nav-container">
-          <img
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html">Experiencias</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="index.html">Foro</a></li>
+          <li><a href="compra.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Logo -->
+      <div class="nav-container">
+        <img
           src="img/logo.png"
           alt="Logo Mochileros Sin Fronteras"
           class="logo"
-          />
-          <!-- Selector de Idiomas -->
-          <select name="idiom" class="idiom-select">
-            <option value="es">ES</option>
-            <option value="en">EN</option>
-            <option value="fr">FR</option>
-            <option value="de">DE</option>
-          </select>
-        </div>
+        />
+        <!-- Selector de Idiomas -->
+        <select name="idiom" class="idiom-select">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+        </select>
+      </div>
     </header>
     <main>
       <!--Registro de nombre, apellidos y correo electrónico-->
-      <section class = "caja-registro">
+      <section class="caja-registro">
         <h1>Registro de nuevos usuarios</h1>
-      <div class="grid-2x2">
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Apellidos">
-        <input type="email" placeholder="Correo electrónico">
-        <input type="email" placeholder="Confirmar Correo">
-      </div>
-
-      <!--Bloque fecha-->
-      <div class="bloque-fecha">
-        <label for="fecha">Fecha de nacimiento</label>
-        <div class="fecha-input">
-        <input id="fecha" placeholder="/ /">
-        <!--icono calendario-->
-        <i class="fa-regular fa-calendar"></i>
+        <div class="grid-2x2">
+          <input type="text" placeholder="Nombre" />
+          <input type="text" placeholder="Apellidos" />
+          <input type="email" placeholder="Correo electrónico" />
+          <input type="email" placeholder="Confirmar Correo" />
         </div>
-      </div>
 
-      <!--Login y password-->
-      <div class="bloque-login">
-        <input type="text" placeholder="login">
-        <input type="password" placeholder="password">
-      </div>
-      
-      <!--Imagen de perfil-->
-      <div class="bloque-imagen">
-        <label for="examinar">Subir imagen de perfil</label>
-        <button id="examinar">Examinar...</button>
-      </div>
+        <!--Bloque fecha-->
+        <div class="bloque-fecha">
+          <label for="fecha">Fecha de nacimiento</label>
+          <div class="fecha-input">
+            <input id="fecha" placeholder="/ /" />
+            <!--icono calendario-->
+            <i class="fa-regular fa-calendar"></i>
+          </div>
+        </div>
 
-      <!--Checkbox política privacidad-->
-      <div>
-        <label for="privacidad">Acepto la <a href="index.html">Política de privacidad</a></label>
-        <input type="checkbox" id="privacidad">
-      </div>
-      <!--Botón guardar-->
-      <div class="boton-guardar">
-        <button><a href="logueado.html">Guardar y salir</a><button>
-      </div>
+        <!--Login y password-->
+        <div class="bloque-login">
+          <input type="text" placeholder="login" />
+          <input type="password" placeholder="password" />
+        </div>
+
+        <!--Imagen de perfil-->
+        <div class="bloque-imagen">
+          <label for="examinar">Subir imagen de perfil</label>
+          <button id="examinar">Examinar...</button>
+        </div>
+
+        <!--Checkbox política privacidad-->
+        <div>
+          <label for="privacidad"
+            >Acepto la <a href="index.html">Política de privacidad</a></label
+          >
+          <input type="checkbox" id="privacidad" />
+        </div>
+        <!--Botón guardar-->
+        <a href="logueado.html" class="boton-guardar"
+          >Guardar Datos y Acceder</a
+        >
       </section>
     </main>
     <!--Footer-->
     <footer>
       <p>@ 2025 Mochileros sin fronteras</p>
-      <div class ="footer-links">
-      <a href="contacto.html">Sobre nosotros.</a>
-      <a href="index.html">Política de privacidad.</a>
-      <a href="contacto.html">Ayuda</a>
+      <div class="footer-links">
+        <a href="contacto.html">Sobre nosotros.</a>
+        <a href="index.html">Política de privacidad.</a>
+        <a href="contacto.html">Ayuda</a>
       </div>
 
       <div class="footer-icons">
