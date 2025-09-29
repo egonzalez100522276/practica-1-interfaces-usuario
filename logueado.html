@@ -184,21 +184,23 @@
         </div>
         <hr />
         <!-- Consejos -->
-        <div>
+        <div class="advice">
           <h4>Últimos consejos</h4>
-          <ul>
+          <ul class="advice-list">
             <!--A los links que no funcionan le ponemos #-->
-            <li><a href="#">Cómo ahorrar dinero en hostales</a></li>
-            <li><a href="#">Mejores apps para planear viajes</a></li>
-            <li><a href="#">Visados fáciles en Asia</a></li>
+            <li><a href="">Cómo ahorrar dinero en hostales</a></li>
+            <li><a href="">Mejores apps para planear viajes</a></li>
+            <li><a href="">Visados fáciles en Asia</a></li>
           </ul>
         </div>
         <!--Sugerencia Consejos-->
         <h4>¿Tienes algún consejo?</h4>
-        <form>
+        <form class="advice-form">
           <input type="text" placeholder="Título del consejo" />
-          <input type="text" placeholder="Escribe aquí tu consejo" />
-          <button>Enviar</button>
+          <div id="advice-form-last-row">
+            <input type="text" placeholder="Escribe aquí tu consejo" />
+            <button id="advice-send-button">Enviar</button>
+          </div>
         </form>
         <!--Calendario-->
         <img src="img/calendario.png" alt="calendario" id="calendar-img" />

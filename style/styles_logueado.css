@@ -1,5 +1,7 @@
 @import url("./styles.css");
 
+/* Search Section */
+
 .checkbox-grid {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -33,6 +35,54 @@
   transform: translateY(-50%);
   font-size: 1rem;
   color: #888;
+}
+
+/* Advice section */
+.advice-list li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease;
+}
+.advice-list li a:hover {
+  color: blue;
+  transform: scale(1.05);
+}
+
+/* Submit your advice Section */
+
+.advice-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  gap: 1rem;
+  padding: 20px;
+}
+.advice-form input {
+  font-size: 1.2rem;
+  width: fit-content;
+  height: 2rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+#advice-form-last-row {
+  display: flex;
+  gap: 4rem;
+}
+
+#advice-send-button {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0.33rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#advice-send-button:hover {
+  transform: scale(1.05);
 }
 
 #calendar-img {
