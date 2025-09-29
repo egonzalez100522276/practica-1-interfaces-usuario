@@ -47,69 +47,82 @@
       </div>
     </header>
 
-    <!--Main en dos columnas (2/3 + 1/3)-->
-    <main>
+    <!--Main en dos columnas (1/3 + 2/3)-->
+    <main class="buy-main">
       <!-- Contenedor izquierda: info-pack -->
       <section id="pack">
-          <div class="info-pack">
-          <h2 class="titulo-pack">Pack Sudeste Asiático</h2>
-          <h2 class ="precio-pack">600€</h2>
-          <p class="resumen-pack">Vietnam & Camboya: buses, hostales y guía de visados</p>
-          </div>
-          <div class="desc-pack">
-            <h3>Descripción del pack</h3>
-            <p>
-              Embárcate con nosotros en una experiencia inolvidable por el
-              sudeste asiático, un viaje diseñado para quienes desean descubrir
-              la esencia de esta región vibrante y diversa. Durante el recorrido
-              explorarás los templos milenarios de Tailandia, navegarás por los
-              mágicos arrozales y bahías de Vietnam, y te adentrarás en los
-              bulliciosos mercados nocturnos de Camboya y Laos, donde tradición
-              y modernidad conviven en perfecta armonía. Nuestro itinerario
-              combina momentos de aventura, como paseos en barco por el Mekong o
-              caminatas por la selva, con espacios de descanso en playas
-              paradisíacas de arena blanca y aguas cristalinas. Además, tendrás
-              la oportunidad de sumergirte en la cultura local compartiendo
-              experiencias con comunidades, degustando su exquisita gastronomía
-              y aprendiendo sobre sus ancestrales costumbres. Todo está
-              cuidadosamente planificado para que disfrutes de un viaje seguro,
-              enriquecedor y lleno de recuerdos que te acompañarán toda la vida.
+        <div class="highlighted">
+          <div class="highlighted-card">
+            <div id="pack-asia-label">
+              <h2>Pack Sudeste Asiático</h2>
+              <p id="price-tag">€ 600</p>
+            </div>
+            <p id="pack-asia-desc">
+              Vietnam & Camboya: buses, hostales y guía de visados
             </p>
           </div>
+        </div>
+
+        <div id="detailed-description">
+          <h3>Descripción del pack</h3>
+          <!-- prettierignore -->
+          <p>
+            Embárcate con nosotros en una experiencia inolvidable por el sudeste
+            asiático, un viaje diseñado para quienes desean descubrir la esencia
+            de esta región vibrante y diversa.
+          </p>
+          <p>
+            Durante el recorrido explorarás los templos milenarios de Tailandia,
+            navegarás por los mágicos arrozales y bahías de Vietnam, y te
+            adentrarás en los bulliciosos mercados nocturnos de Camboya y Laos,
+            donde tradición y modernidad conviven en perfecta armonía.
+          </p>
+          <p>
+            Nuestro itinerario combina momentos de aventura, como paseos en
+            barco por el Mekong o caminatas por la selva, con espacios de
+            descanso en playas paradisíacas de arena blanca y aguas cristalinas.
+          </p>
+          <p>
+            Además, tendrás la oportunidad de sumergirte en la cultura local
+            compartiendo experiencias con comunidades, degustando su exquisita
+            gastronomía y aprendiendo sobre sus ancestrales costumbres.
+          </p>
+          <p>
+            Todo está cuidadosamente planificado para que disfrutes de un viaje
+            seguro, enriquecedor y lleno de recuerdos que te acompañarán toda la
+            vida.
+          </p>
+        </div>
       </section>
 
       <!--Contenedor derecha: formulario de compra-->
       <aside>
-        <form class="formulario-compra" action="index.html">
+        <form class="buy-form" action="index.html">
           <h2>Formulario de compra</h2>
-          <input type="text" placeholder="Nombre"/>
-          <input type="text" placeholder="Apellidos"/>
+          <input type="text" placeholder="Nombre" />
+          <input type="text" placeholder="Apellidos" />
 
-         <label for="select-tarjeta">Tipo de tarjeta</label>
-          <select id="select-tarjeta" name="tarjeta">
+          <label for="select-tarjeta">Tipo de tarjeta</label>
+          <select id="card-type" name="tarjeta">
             <option value="Visa">Visa</option>
             <option value="Mastercard">Mastercard</option>
           </select>
 
-          <input type="text" placeholder="Número de tarjeta"/>
-          <input type="text" placeholder="Nombre del titular de la tarjeta"/>
+          <input type="text" placeholder="Número de tarjeta" />
+          <input type="text" placeholder="Nombre del titular de la tarjeta" />
 
           <!--Bloque fecha-->
-          <div class="bloque-fecha-cad">
-            <label for="fecha">Fecha de caducidad</label>
-            <div class="fecha-input">
-                <input id="fecha" placeholder="/ /" />
-                <!--icono calendario-->
-                <i class="fa-regular fa-calendar"></i>
+          <div class="card-expire-cvv">
+            <div class="date-input">
+              <label for="fecha">Fecha de caducidad</label>
+              <input type="date" id="fecha" />
             </div>
+            <input type="text" placeholder="Código CVV" />
           </div>
 
-          <div class="bloque-cvv">
-          <input type="text" placeholder="Código CVV"/>
-          </div>
-          <div class="botones-compra">
-          <button>Comprar</button>
-          <button>Borrar</button>
+          <div class="form-buttons">
+            <a href="index.hml">Comprar</a>
+            <a href="compra.html">Borrar</a>
           </div>
         </form>
       </aside>
