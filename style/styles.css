@@ -289,7 +289,7 @@ nav ul li a:hover {
 /*Aside*/
 aside {
   padding: 1rem;
-  border-left: 2px solid #000000;
+  border-left: 6px solid #ccc;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
