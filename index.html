@@ -49,7 +49,7 @@
     </header>
     <main>
       <!-- Left section -->
-      <section id="left-section">
+      <div id="left-section">
         <section class="highlighted-section">
           <h2>Comparte y descubre viajes mochileros de larga distancia</h2>
           <!-- Highlighted content -->
@@ -143,7 +143,7 @@
             </div>
           </div>
         </section>
-      </section>
+      </div>
       <!-- Sidebar -->
       <aside>
         <!-- Login/Register form -->
@@ -151,13 +151,11 @@
           <input
             type="text"
             placeholder="Usuario..."
-            required="true"
             id="user"
           />
           <input
             type="text"
             placeholder="Contraseña..."
-            required="true"
             id="password"
           />
           <div class="remember">
@@ -166,7 +164,9 @@
           </div>
           <div class="login-buttons">
             <a href="logged.html" id="btn-login" class="btn">Iniciar sesión</a>
-            <a href="register.html" id="btn-register" class="btn">Registrarse</a>
+            <a href="register.html" id="btn-register" class="btn"
+              >Registrarse</a
+            >
           </div>
         </form>
         <hr />
