@@ -1,4 +1,5 @@
 @import url("./styles.css");
+
 html {
   width: 100%;
 }
@@ -12,16 +13,17 @@ body {
 main {
   flex: 1;
   display: flex;
-  justify-content: center; /* centrado horizontal */
-  align-items: center; /* centrado vertical */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
   padding: 2rem 1rem;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.caja-registro {
+/* Registration box */
+.register-box {
   width: 100%;
-  max-width: 800px; /* límite para que no sea demasiado ancha */
-  min-height: 60vh; /* asegura que ocupe buena parte de la pantalla */
+  max-width: 800px; /* max width for readability */
+  min-height: 60vh; /* ensures it occupies enough space */
   background: rgba(255, 255, 255, 0.85);
   border: 2px solid #000;
   padding: 1.5rem;
@@ -43,20 +45,22 @@ h1 {
   gap: 12px;
 }
 
-.bloque-fecha {
+/* Date block */
+.date-block {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin: 1rem 0;
 }
 
-.fecha-input {
+.date-input {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.bloque-login {
+/* Login block */
+.login-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
@@ -64,17 +68,19 @@ h1 {
   gap: 1rem;
 }
 
-.bloque-imagen {
+/* Image block */
+.image-block {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin: 1rem 0;
 }
 
-.bloque-imagen button {
+.image-block button {
   width: 10rem;
 }
 
+/* Actions section */
 .register-actions {
   display: flex;
   align-items: center;
@@ -82,7 +88,8 @@ h1 {
   flex-wrap: wrap;
 }
 
-.boton-guardar {
+/* Save button */
+.save-button {
   display: flex;
   background: white;
   border: 1px solid black;
@@ -95,7 +102,8 @@ h1 {
   text-decoration: none;
   transition: transform 0.2s ease;
 }
-.boton-guardar:hover {
+
+.save-button:hover {
   transform: scale(1.05);
 }
 
@@ -116,29 +124,29 @@ button:hover {
   outline: none;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-  .caja-registro {
+  .register-box {
     width: 80%;
   }
+
   .grid-2x2 {
     display: flex;
     flex-wrap: wrap;
-
-    justify-content: center;
-    align-items: center;
-  }
-  .bloque-fecha {
-    display: flex;
-    flex-wrap: wrap;
-
     justify-content: center;
     align-items: center;
   }
 
-  .bloque-login {
+  .date-block {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .login-block {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }

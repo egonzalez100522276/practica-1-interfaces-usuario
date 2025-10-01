@@ -88,14 +88,14 @@ nav ul li a:hover {
 .logo:hover {
   transform: scale(1.05);
 }
-.idiom-select {
+.language-select {
   height: 40px;
   border-radius: 40%;
   background: #fbfcff;
 }
 
 /* Highlighted packs section */
-.highlighted-content {
+.highlighted-section {
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@ nav ul li a:hover {
   background-position: center;
   border-bottom: 8px solid rgba(0, 0, 0, 0.8);
 }
-.highlighted-content h2 {
+.highlighted-section h2 {
   font-size: 2.5rem;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5), -1px 1px 10px rgba(0, 0, 0, 0.5),
     1px -1px 10px rgba(0, 0, 0, 0.5), -1px -1px 10px rgba(0, 0, 0, 0.5);
@@ -154,14 +154,14 @@ nav ul li a:hover {
   margin-bottom: 0;
 }
 
-#pack-asia-label {
+#asia-pack-label {
   width: 100%;
   display: flex;
   justify-content: space-between;
   font-size: 1.2rem;
   align-items: center;
 }
-#pack-asia-label h3 {
+#asia-pack-label h3 {
   font-size: 1.8rem;
 }
 #price-tag {
@@ -179,10 +179,10 @@ nav ul li a:hover {
   transition: transform 0.2s;
 }
 
-#pack-asia-label p:hover {
+#asia-pack-label p:hover {
   transform: scale(1.05);
 }
-#pack-asia-desc {
+#asia-pack-desc {
   font-size: 1.1rem;
 }
 
@@ -220,7 +220,7 @@ nav ul li a:hover {
   text-shadow: 1px 1px 10px black;
 }
 
-.carrousel {
+.carousel {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -267,8 +267,6 @@ nav ul li a:hover {
 .experience-card a {
   color: black;
   text-decoration: none;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
   padding: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
@@ -283,17 +281,17 @@ nav ul li a:hover {
 }
 
 .experience-card i {
-  font-size: 1.5rem; /* o 24px, 32px, etc. */
+  font-size: 1.5rem; /* or 24px, 32px, etc. */
 }
 
-/*Aside*/
+/* Aside */
 aside {
   padding: 1rem;
   border-left: 6px solid #ccc;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* Formulario login */
+/* Login form */
 .login-form {
   display: grid;
   grid-template-columns: 1fr;
@@ -337,7 +335,7 @@ aside {
   transform: scale(1.05);
 }
 
-/*Quitar bullets de las listas*/
+/* Remove bullets from lists */
 aside ul {
   line-height: 1.5rem;
 }
@@ -362,7 +360,7 @@ aside h4 {
   padding: 0;
 }
 
-/*Footer*/
+/* Footer */
 footer {
   display: flex;
   flex-direction: column;
@@ -459,7 +457,7 @@ footer .footer-links a:hover {
   transform: scale(1.05);
 }
 
-/* Tablets (pantallas medianas) */
+/* Tablets (medium screens) */
 @media (max-width: 768px) {
   main {
     display: flex;
@@ -468,7 +466,7 @@ footer .footer-links a:hover {
 
   header {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* dos columnas para la segunda fila */
+    grid-template-columns: 2fr 1fr; /* two columns for the second row */
     grid-template-rows: auto auto;
     align-items: flex-start;
     justify-content: space-evenly;
@@ -501,7 +499,7 @@ footer .footer-links a:hover {
     height: auto;
   }
 
-  .carrousel {
+  .carousel {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -520,7 +518,7 @@ footer .footer-links a:hover {
   }
 }
 
-/* Móviles (pantallas pequeñas) */
+/* Mobile (small screens) */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -533,7 +531,7 @@ footer .footer-links a:hover {
     align-items: flex-start;
   }
 
-  .carrousel {
+  .carousel {
     grid-template-columns: 1fr;
   }
 

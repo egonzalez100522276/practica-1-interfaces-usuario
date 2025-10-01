@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mochileros Sin Fronteras</title>
-    <!-- Iconos y estilos -->
+    <!-- Icons and styles -->
     <link rel="icon" type="image/png" href="img/logo.png" />
-    <link rel="stylesheet" href="style/styles_logueado.css" />
-    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="style/styles_logged.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -19,28 +18,28 @@
   </head>
 
   <body>
-    <!-- Barra superior -->
+    <!-- Top bar -->
     <header>
       <h2>Mochileros Sin Fronteras</h2>
-      <!-- Barra de Navegación -->
+      <!-- Navigation bar -->
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="index.html">Experiencias</a></li>
-          <li><a href="registro.html">Registro</a></li>
+          <li><a href="register.html">Registro</a></li>
           <li><a href="index.html">Foro</a></li>
-          <li><a href="compra.html">Contacto</a></li>
+          <li><a href="buy.html">Contacto</a></li>
         </ul>
       </nav>
-      <!-- Logo -->
+      <!-- Logo and language selector -->
       <div class="nav-container">
         <img
           src="img/logo.png"
           alt="Logo Mochileros Sin Fronteras"
           class="logo"
         />
-        <!-- Selector de Idiomas -->
-        <select name="idiom" class="idiom-select">
+        <!-- Language selector -->
+        <select name="language" class="language-select">
           <option value="es">ES</option>
           <option value="en">EN</option>
           <option value="fr">FR</option>
@@ -49,31 +48,31 @@
       </div>
     </header>
     <main>
-      <!-- Sección izquierda -->
+      <!-- Left section -->
       <section id="left-section">
-        <section class="highlighted-content">
+        <section class="highlighted-section">
           <h2>Comparte y descubre viajes mochileros de larga distancia</h2>
-          <!-- Contenido destacado -->
+          <!-- Highlighted content -->
           <div class="highlighted">
             <i class="fa fa-angle-left"></i>
             <div class="highlighted-card">
-              <div id="pack-asia-label">
+              <div id="asia-pack-label">
                 <h3>Pack Sudeste Asiático</h3>
                 <p id="price-tag">€ 600</p>
               </div>
-              <p id="pack-asia-desc">
+              <p id="asia-pack-desc">
                 Vietnam & Camboya: buses, hostales y guía de visados
               </p>
-              <a href="compra.html" class="buy-button">Comprar</a>
+              <a href="buy.html" class="buy-button">Comprar</a>
             </div>
             <i class="fa fa-angle-right"></i>
           </div>
         </section>
-        <!-- Carrusel de experiencias -->
+        <!-- Experiences carousel -->
         <section class="experiences">
           <h2>Experiencias de la comunidad mochilera</h2>
-          <div class="carrousel">
-            <div id="experiencia1" class="experience-card">
+          <div class="carousel">
+            <div id="experience1" class="experience-card">
               <h3>Hotel en Katmandú</h3>
               <div class="experience-card-body">
                 <img
@@ -86,7 +85,7 @@
                 </div>
               </div>
             </div>
-            <div id="experiencia2" class="experience-card">
+            <div id="experience2" class="experience-card">
               <h3>Acampada en Mongolia</h3>
               <div class="experience-card-body">
                 <img
@@ -99,7 +98,7 @@
                 </div>
               </div>
             </div>
-            <div id="experiencia3" class="experience-card">
+            <div id="experience3" class="experience-card">
               <h3>Visado para India</h3>
               <div class="experience-card-body">
                 <img src="/img/experience-3.png" alt="Experiencia en India" />
@@ -109,7 +108,7 @@
                 </div>
               </div>
             </div>
-            <div id="experiencia4" class="experience-card">
+            <div id="experience4" class="experience-card">
               <h3>Vietnam: ruta en moto</h3>
               <div class="experience-card-body">
                 <img src="/img/experience-4.png" alt="Experiencia en Vietnam" />
@@ -119,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <div id="experiencia5" class="experience-card">
+            <div id="experience5" class="experience-card">
               <h3>Trekking en Perú</h3>
               <div class="experience-card-body">
                 <img src="/img/experience-5.png" alt="Experiencia en Perú" />
@@ -129,7 +128,7 @@
                 </div>
               </div>
             </div>
-            <div id="experiencia6" class="experience-card">
+            <div id="experience6" class="experience-card">
               <h3>Safari en Tanzania</h3>
               <div class="experience-card-body">
                 <img
@@ -145,9 +144,9 @@
           </div>
         </section>
       </section>
-      <!-- Barra lateral -->
+      <!-- Sidebar -->
       <aside>
-        <!--Información de usuario-->
+        <!-- User information -->
         <div class="user-info">
           <h2>@fulanito17</h2>
           <div class="user-actions">
@@ -157,17 +156,17 @@
         </div>
 
         <hr />
-        <!--Buscador de experiencias-->
+        <!-- Experiences search -->
         <h4>Busca experiencias</h4>
-        <!--Checkboxes-->
+        <!-- Checkboxes -->
         <div class="checkbox-grid">
           <div class="checkbox-container">
             <input type="checkbox" id="america" />
             <label for="america">América</label>
           </div>
           <div class="checkbox-container">
-            <input type="checkbox" id="europa" />
-            <label for="europa">Europa</label>
+            <input type="checkbox" id="europe" />
+            <label for="europe">Europa</label>
           </div>
           <div class="checkbox-container">
             <input type="checkbox" id="asia" />
@@ -178,22 +177,21 @@
             <label for="africa">África</label>
           </div>
         </div>
-        <!--Searchbar-->
+        <!-- Search bar -->
         <div class="search-bar">
           <input type="text" placeholder="Search" />
         </div>
         <hr />
-        <!-- Consejos -->
+        <!-- Advice -->
         <div class="advice">
           <h4>Últimos consejos</h4>
           <ul class="advice-list">
-            <!--A los links que no funcionan le ponemos #-->
-            <li><a href="">Cómo ahorrar dinero en hostales</a></li>
-            <li><a href="">Mejores apps para planear viajes</a></li>
-            <li><a href="">Visados fáciles en Asia</a></li>
+            <li><a href="#">Cómo ahorrar dinero en hostales</a></li>
+            <li><a href="#">Mejores apps para planear viajes</a></li>
+            <li><a href="#">Visados fáciles en Asia</a></li>
           </ul>
         </div>
-        <!--Sugerencia Consejos-->
+        <!-- Suggest advice -->
         <h4>¿Tienes algún consejo?</h4>
         <form class="advice-form">
           <input type="text" placeholder="Título del consejo" />
@@ -202,11 +200,11 @@
             <button id="advice-send-button">Enviar</button>
           </div>
         </form>
-        <!--Calendario-->
+        <!-- Calendar -->
         <img src="img/calendario.png" alt="calendario" id="calendar-img" />
       </aside>
     </main>
-    <!--Footer-->
+    <!-- Footer -->
     <footer>
       <div class="first-footer-row">
         <p>@ 2025 Mochileros sin fronteras</p>
@@ -222,7 +220,7 @@
           <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-      <!-- Mini-formulario newsletter -->
+      <!-- Newsletter mini-form -->
       <div class="last-footer-row">
         <form class="newsletter">
           <label for="nl-email">Suscríbete a la newsletter</label>
